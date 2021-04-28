@@ -1,0 +1,29 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/6088bcd476b1c10f4caa54a8
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+	"name" : "Necqui Teja",
+	"subscribedToChannel" : "Web Dev Simplified"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/6088bcd476b1c10f4caa54a8
+
+###
+
+PATCH http://localhost:3000/subscribers/6088bcd476b1c10f4caa54a8
+Content-Type: application/json
+
+{
+	"name" : "Necqui",
+	"subscribedToChannel" : "UxTrendz"
+}
