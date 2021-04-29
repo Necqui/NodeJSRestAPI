@@ -9,6 +9,7 @@ const db = mongoose.connection
 db.on('error', (error) => console.error(error))
 db.once('open', () => console.log('Connected to Database'))
 
+// It parses incoming requests with JSON payloads and is based on body-parser
 app.use(express.json())
 
 const subscribersRouter = require('./routes/subscribers')

@@ -1,26 +1,32 @@
-GET http://localhost:3000/subscribers
+
+@baseUrl = http://localhost:3000
+@name = Web Dev Simplified
 
 ###
 
-GET http://localhost:3000/subscribers/6088bcd476b1c10f4caa54a8
+GET {{baseUrl}}/subscribers
 
 ###
 
-POST http://localhost:3000/subscribers
+GET {{baseUrl}}/subscribers/6089ff2132aef917801e41ab
+
+###
+
+POST {{baseUrl}}/subscribers
 Content-Type: application/json
 
 {
-	"name" : "Necqui Teja",
-	"subscribedToChannel" : "Web Dev Simplified"
+	"name" : "{{$dotenv USERNAME}}",
+	"subscribedToChannel" : "{{name}}"
 }
 
 ###
 
-DELETE http://localhost:3000/subscribers/6088bcd476b1c10f4caa54a8
+DELETE {{baseUrl}}/subscribers/608a02222768c530d8d8b849
 
 ###
 
-PATCH http://localhost:3000/subscribers/6088bcd476b1c10f4caa54a8
+PATCH {{baseUrl}}/subscribers/6089ff2132aef917801e41ab
 Content-Type: application/json
 
 {
