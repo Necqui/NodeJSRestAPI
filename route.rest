@@ -8,7 +8,7 @@ GET {{baseUrl}}/subscribers
 
 ###
 
-GET {{baseUrl}}/subscribers/6089ff2132aef917801e41ab
+GET {{baseUrl}}/subscribers/608a2425e8e6a4215c6d9c8b
 
 ###
 
